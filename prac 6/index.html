@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <input v-model="FirstName" placeholder="Enter your First name">
+            <p>First name: {{ FirstName }}</p>
+            <input v-model="LastName" placeholder="Enter your last name">
+            <p>last name: {{ LastName }}</p>
+            
+            <p>{{ message }}</p>
+            <select v-model="selected">
+                <option disabled value="">Please select one</option>
+                <option>food</option>
+                <option>friends</option>
+                <option>movies</option>
+              </select><span> Selected: {{ selected }}</span>
+
+            <br> 
+            <br><input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+            <label for="jack">Jack</label>
+            <input type="checkbox" id="max" value="Max" v-model="checkedNames">
+            <label for="max">Max</label>
+            <input type="checkbox" id="rory" value="Rory" v-model="checkedNames">
+            <label for="rory">Rory</label>
+            <br>
+            <span>Checked names: {{ checkedNames }}</span>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
