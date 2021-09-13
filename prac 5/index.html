@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <p>{{ message }}</p>
+            <select v-model="selected">
+                <option disabled value="">Please select one</option>
+                <option>food</option>
+                <option>friends</option>
+                <option>movies</option>
+              </select>
+              <span>Selected: {{ selected }}</span>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
