@@ -1,0 +1,28 @@
+body {
+    background-color: green;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  img{
+     border-radius: 50%;
+      float: center;
+  }
+  
+  form{
+    height: 80px;
+    float: right;
+    margin-right: 20px;
+    
+  }
+  
